@@ -17,11 +17,6 @@ namespace HuellitasAppLocal
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonProducto_Click(object sender, EventArgs e)
         {
             var formProductos = new ProductosForm(); // O el nombre que le pusiste
@@ -32,6 +27,18 @@ namespace HuellitasAppLocal
         private void InicioForm_Load(object sender, EventArgs e)
         {
             DBHelper.CrearBaseSiNoExiste();
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); // Cierra toda la aplicación
+        }
+
+        private void buttonCompras_Click(object sender, EventArgs e)
+        {
+            var ComprasForm = new ComprasForm(); //llama a formulario compras
+            ComprasForm.Show();
+            this.Hide();
         }
     }
 }

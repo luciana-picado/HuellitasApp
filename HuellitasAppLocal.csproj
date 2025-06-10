@@ -71,12 +71,24 @@
     <Compile Include="AltaForm.Designer.cs">
       <DependentUpon>AltaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ComprasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprasForm.Designer.cs">
+      <DependentUpon>ComprasForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBHelper.cs" />
     <Compile Include="InicioForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InicioForm.Designer.cs">
       <DependentUpon>InicioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarProductosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarProductosForm.Designer.cs">
+      <DependentUpon>ModificarProductosForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ProductosForm.cs">
       <SubType>Form</SubType>
@@ -89,8 +101,14 @@
     <EmbeddedResource Include="AltaForm.resx">
       <DependentUpon>AltaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ComprasForm.resx">
+      <DependentUpon>ComprasForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InicioForm.resx">
       <DependentUpon>InicioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarProductosForm.resx">
+      <DependentUpon>ModificarProductosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductosForm.resx">
       <DependentUpon>ProductosForm.cs</DependentUpon>

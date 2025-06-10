@@ -43,7 +43,6 @@
             this.label1.Size = new System.Drawing.Size(480, 82);
             this.label1.TabIndex = 0;
             this.label1.Text = "Huellitas Pet Shop";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonProducto
             // 
@@ -66,6 +65,7 @@
             this.buttonCompras.TabIndex = 2;
             this.buttonCompras.Text = "Compras";
             this.buttonCompras.UseVisualStyleBackColor = true;
+            this.buttonCompras.Click += new System.EventHandler(this.buttonCompras_Click);
             // 
             // buttonVentas
             // 
@@ -86,6 +86,7 @@
             this.buttonSalir.TabIndex = 4;
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.UseVisualStyleBackColor = true;
+            this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
             // 
             // InicioForm
             // 

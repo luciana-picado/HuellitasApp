@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.lblSubCategoria = new System.Windows.Forms.Label();
             this.lblPVenta = new System.Windows.Forms.Label();
@@ -42,13 +42,13 @@
             this.lblPBolsa = new System.Windows.Forms.Label();
             this.lblPCosto = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtSubcategoria = new System.Windows.Forms.TextBox();
             this.txtPrecioVenta = new System.Windows.Forms.TextBox();
             this.txtPorcentajeAgregar = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
+            this.txtItemPorPack = new System.Windows.Forms.TextBox();
+            this.txtPrecioPorKilo = new System.Windows.Forms.TextBox();
+            this.txtPrecioPorBolsa = new System.Windows.Forms.TextBox();
             this.txtPrecioCosto = new System.Windows.Forms.TextBox();
             this.cmbProovedor = new System.Windows.Forms.ComboBox();
             this.lblKgBolsa = new System.Windows.Forms.Label();
@@ -65,7 +65,6 @@
             this.label1.Size = new System.Drawing.Size(318, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "Alta de Producto";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblNombre
             // 
@@ -75,15 +74,14 @@
             this.lblNombre.Size = new System.Drawing.Size(157, 30);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre";
-            this.lblNombre.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(191, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 30);
-            this.textBox1.TabIndex = 2;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(191, 77);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(159, 30);
+            this.txtNombre.TabIndex = 2;
             // 
             // cmbCategoria
             // 
@@ -112,7 +110,6 @@
             this.lblPVenta.Size = new System.Drawing.Size(145, 30);
             this.lblPVenta.TabIndex = 15;
             this.lblPVenta.Text = "$ de Venta";
-            this.lblPVenta.Click += new System.EventHandler(this.label14_Click);
             // 
             // lblPaAgregar
             // 
@@ -158,7 +155,6 @@
             this.lblPxKilo.Size = new System.Drawing.Size(157, 30);
             this.lblPxKilo.TabIndex = 20;
             this.lblPxKilo.Text = "$ por Kilo";
-            this.lblPxKilo.Click += new System.EventHandler(this.label19_Click);
             // 
             // lblPBolsa
             // 
@@ -168,7 +164,6 @@
             this.lblPBolsa.Size = new System.Drawing.Size(157, 30);
             this.lblPBolsa.TabIndex = 21;
             this.lblPBolsa.Text = "$ Bolsa";
-            this.lblPBolsa.Click += new System.EventHandler(this.label20_Click);
             // 
             // lblPCosto
             // 
@@ -178,7 +173,6 @@
             this.lblPCosto.Size = new System.Drawing.Size(157, 30);
             this.lblPCosto.TabIndex = 22;
             this.lblPCosto.Text = "$ Costo";
-            this.lblPCosto.Click += new System.EventHandler(this.label21_Click);
             // 
             // lblCategoria
             // 
@@ -188,15 +182,14 @@
             this.lblCategoria.Size = new System.Drawing.Size(157, 30);
             this.lblCategoria.TabIndex = 23;
             this.lblCategoria.Text = "Categoria";
-            this.lblCategoria.Click += new System.EventHandler(this.label22_Click);
             // 
-            // textBox6
+            // txtSubcategoria
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(608, 115);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(159, 30);
-            this.textBox6.TabIndex = 28;
+            this.txtSubcategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubcategoria.Location = new System.Drawing.Point(608, 115);
+            this.txtSubcategoria.Name = "txtSubcategoria";
+            this.txtSubcategoria.Size = new System.Drawing.Size(159, 30);
+            this.txtSubcategoria.TabIndex = 28;
             // 
             // txtPrecioVenta
             // 
@@ -214,37 +207,37 @@
             this.txtPorcentajeAgregar.Size = new System.Drawing.Size(159, 30);
             this.txtPorcentajeAgregar.TabIndex = 30;
             // 
-            // textBox9
+            // txtStock
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(191, 314);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(159, 30);
-            this.textBox9.TabIndex = 31;
+            this.txtStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStock.Location = new System.Drawing.Point(191, 314);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(159, 30);
+            this.txtStock.TabIndex = 31;
             // 
-            // textBox10
+            // txtItemPorPack
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(191, 281);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(159, 30);
-            this.textBox10.TabIndex = 32;
+            this.txtItemPorPack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtItemPorPack.Location = new System.Drawing.Point(191, 281);
+            this.txtItemPorPack.Name = "txtItemPorPack";
+            this.txtItemPorPack.Size = new System.Drawing.Size(159, 30);
+            this.txtItemPorPack.TabIndex = 32;
             // 
-            // textBox12
+            // txtPrecioPorKilo
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(191, 215);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(159, 30);
-            this.textBox12.TabIndex = 34;
+            this.txtPrecioPorKilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioPorKilo.Location = new System.Drawing.Point(191, 215);
+            this.txtPrecioPorKilo.Name = "txtPrecioPorKilo";
+            this.txtPrecioPorKilo.Size = new System.Drawing.Size(159, 30);
+            this.txtPrecioPorKilo.TabIndex = 34;
             // 
-            // textBox13
+            // txtPrecioPorBolsa
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(190, 179);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(159, 30);
-            this.textBox13.TabIndex = 35;
+            this.txtPrecioPorBolsa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioPorBolsa.Location = new System.Drawing.Point(190, 179);
+            this.txtPrecioPorBolsa.Name = "txtPrecioPorBolsa";
+            this.txtPrecioPorBolsa.Size = new System.Drawing.Size(159, 30);
+            this.txtPrecioPorBolsa.TabIndex = 35;
             // 
             // txtPrecioCosto
             // 
@@ -289,7 +282,7 @@
             this.btnGuardar.TabIndex = 40;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.button1_Click);
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnAtras
             // 
@@ -300,6 +293,7 @@
             this.btnAtras.TabIndex = 41;
             this.btnAtras.Text = "Atras";
             this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // AltaForm
             // 
@@ -311,10 +305,10 @@
             this.Controls.Add(this.txtKgBolsa);
             this.Controls.Add(this.lblKgBolsa);
             this.Controls.Add(this.cmbProovedor);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtStock);
             this.Controls.Add(this.txtPorcentajeAgregar);
             this.Controls.Add(this.txtPrecioVenta);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtSubcategoria);
             this.Controls.Add(this.lblStock);
             this.Controls.Add(this.lblPaAgregar);
             this.Controls.Add(this.lblPVenta);
@@ -322,16 +316,16 @@
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPrecioCosto);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtPrecioPorBolsa);
+            this.Controls.Add(this.txtPrecioPorKilo);
+            this.Controls.Add(this.txtItemPorPack);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblPCosto);
             this.Controls.Add(this.lblPBolsa);
             this.Controls.Add(this.lblPxKilo);
             this.Controls.Add(this.lblProovedor);
             this.Controls.Add(this.lblItemxPack);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.Name = "AltaForm";
             this.Text = "AltaForm";
@@ -345,7 +339,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.Label lblSubCategoria;
         private System.Windows.Forms.Label lblPVenta;
@@ -357,13 +351,13 @@
         private System.Windows.Forms.Label lblPBolsa;
         private System.Windows.Forms.Label lblPCosto;
         private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtSubcategoria;
         private System.Windows.Forms.TextBox txtPrecioVenta;
         private System.Windows.Forms.TextBox txtPorcentajeAgregar;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtStock;
+        private System.Windows.Forms.TextBox txtItemPorPack;
+        private System.Windows.Forms.TextBox txtPrecioPorKilo;
+        private System.Windows.Forms.TextBox txtPrecioPorBolsa;
         private System.Windows.Forms.TextBox txtPrecioCosto;
         private System.Windows.Forms.ComboBox cmbProovedor;
         private System.Windows.Forms.Label lblKgBolsa;
